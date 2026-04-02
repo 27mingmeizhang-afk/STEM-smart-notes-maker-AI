@@ -1,0 +1,125 @@
+:root {
+    --bg: #fff9fb;
+    --card: #ffffff;
+    --primary: #e89cae;
+    --text: #444;
+    --soft: #f7e6ea;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+    border-bottom: 1px solid var(--soft);
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+header p {
+    opacity: 0.7;
+}
+
+/* SECTION */
+section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary);
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(232,156,174,0.15);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* GAME */
+.game {
+    text-align: center;
+    background: var(--card);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(232,156,174,0.15);
+}
+
+.score {
+    font-size: 4rem;
+    color: var(--primary);
+    margin: 20px 0;
+}
+
+/* BUTTON */
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #aaa;
+}
